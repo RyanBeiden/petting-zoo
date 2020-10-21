@@ -1,32 +1,62 @@
-from dolphin import create_dolphin
-from octopus import create_octopus
-from seahorse import create_seahorse
-from shark import create_shark
-from whale import create_whale
-from elephant import create_elephant
-from goat import create_goat
-from horse import create_horse
-from lion import create_lion
-from llama import create_llama
-from lizard import create_lizard
-from snail import create_snail
-from snake import create_snake
-from spider import create_spider
-from worm import create_worm
+from models import Llama, Lion, Horse, Goat, Elephant, Dolphin, Octopus, Seahorse, Shark, Whale, Lizard, Snail, Snake, Spider, Worm
 
 def main():
-    create_dolphin()
-    create_octopus()
-    create_seahorse()
-    create_shark()
-    create_whale()
-    create_elephant()
-    create_goat()
-    create_horse()
-    create_lion()
-    create_llama()
-    create_lizard()
-    create_snail()
-    create_snake()
-    create_spider()
-    create_worm()
+    tina = Llama("Tina", "fat lard", "morning", "Llama Chow")
+    print(tina)
+    tina.feed()
+
+    aslan = Lion("Aslan", "huge", "afternoon", "meat")
+    print(aslan)
+    aslan.feed()
+
+    harriet = Horse("Harriet", "racing", "afternoon", "grass")
+    print(harriet)
+    harriet.feed()
+
+    lawrence = Goat("Lawrence", "fainting", "midday", "straw")
+    print(lawrence)
+    lawrence.feed()
+
+    steve = Elephant("Steve", "white", "morning", "trees")
+    print(steve)
+    steve.feed()
+
+    joe = Dolphin("Joe", "baiji", "morning", "fishies")
+    print(joe)
+    joe.feed()
+
+    larry = Octopus("Larry", "cyanea", "morning", "ink")
+    print(larry)
+    larry.feed()
+
+    gary = Seahorse("Gary", "baiji", "morning", "plankton")
+    print(gary)
+    gary.feed()
+
+    jerry = Shark("Jerry", "great white", "afternoon", "human leg")
+    print(jerry)
+    jerry.feed()
+
+    bob = Whale("Bob", "sea", "midday", "bubbles")
+    print(bob)
+    bob.feed()
+
+    gilbert = Lizard("Gilbert", "shiny", "midday", "ants")
+    print(gilbert)
+    gilbert.feed()
+
+    sam = Snail("Sam", "slow", "afternoon", "slime")
+    print(sam)
+    sam.feed()
+
+    sawyer = Snake("Sawyer", "sthnake", "afternoon", "rat")
+    print(sawyer)
+    sawyer.feed()
+
+    satan = Spider("Satan", "scary & gross", "afternoon", "nothing")
+    print(satan)
+    satan.feed()
+
+    wilbur = Worm("Wilbur", "sticky", "morning", "little worms")
+    print(wilbur)
+    wilbur.feed()
