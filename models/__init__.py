@@ -13,3 +13,4 @@ from .snake import Snake
 from .spider import Spider
 from .whale import Whale
 from .worm import Worm
+from .attractions import PettingZoo, SnakePit, Wetlands
