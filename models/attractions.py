@@ -8,6 +8,10 @@ class PettingZoo():
     def add_animals(self, animal):
         self.animals.append(animal)
 
+    @property
+    def last_critter_added(self):
+        return self.animals[-1]
+
 class SnakePit():
 
     def __init__(self, attraction_name, description):
@@ -18,6 +22,10 @@ class SnakePit():
     def add_animals(self, animal):
         self.animals.append(animal)
 
+    @property
+    def last_critter_added(self):
+        return self.animals[-1]
+
 class Wetlands():
 
     def __init__(self, attraction_name, description):
@@ -27,3 +35,7 @@ class Wetlands():
 
     def add_animals(self, animal):
         self.animals.append(animal)
+
+    @property
+    def last_critter_added(self):
+        return self.animals[-1]

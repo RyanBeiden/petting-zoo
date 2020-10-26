@@ -18,7 +18,7 @@ def create_attractions_with_animals():
     varmint_village.add_animals(steve)
 
 
-    joe = Dolphin("Joe", "baiji", "morning", "fishies")
+    joe = Dolphin("Joe", "baiji", "morning", "fishies", 123456)
     larry = Octopus("Larry", "cyanea", "morning", "ink")
     gary = Seahorse("Gary", "baiji", "morning", "plankton")
     jerry = Shark("Jerry", "great white", "afternoon", "human leg")
