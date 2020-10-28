@@ -1,9 +1,11 @@
-from animals.animals import create_attractions_with_animals
+from animals import Dolphin
+from attractions import Wetlands
 
 def main():
-    attractions_with_animals = create_attractions_with_animals()
-    
-    for attraction in attractions_with_animals:
-        print(f'{attraction.attraction_name}, {attraction.description}')
-        for animal in attraction.animals:
-            print(f'* {animal.name} the {animal.species}')
+    joe = Dolphin("Joe", "baiji", "morning", "fishies", 874191)
+
+    a_wet_place = Wetlands("A Wet Place", "real, real wet that's for sure.")
+    a_wet_place.add_animal(joe)
+
+    for animal in a_wet_place.animals:
+        print(animal)
