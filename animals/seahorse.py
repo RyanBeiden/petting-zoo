@@ -1,4 +1,4 @@
-from animals import Animal
+from . import Animal
 
 class Seahorse(Animal):
 
